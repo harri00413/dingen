@@ -1,0 +1,35 @@
+---
+import Social from "./Social.astro";
+---
+
+<footer>
+  <div class="footer-wrap">
+    <div class="footeritem">
+      <p>
+        Learn more about my projects on <Social
+          platform="github"
+          username="harri00413"
+        />
+      </p>
+    </div>
+    <div class="footeritem">
+      <p>
+        Volg me op <Social platform="X" username="harri00413" />
+      </p>
+    </div>
+  </div>
+  <style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    @media only screen and (width > 800px) {
+      .footer-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-block: 2rem;
+      }
+    }
+  </style>
+</footer>

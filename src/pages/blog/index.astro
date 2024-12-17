@@ -1,9 +1,10 @@
 ---
-import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import Navigation from "../../components/Navigation.astro";
+import Footer from "../../components/Footer.astro";
 
-const pageTitle = "Re:Dingen";
+import "../../styles/global.css";
+
+const pageTitle = "Re:Dingen Blog";
 ---
 
 <html lang="nl-nl">
@@ -19,22 +20,26 @@ const pageTitle = "Re:Dingen";
     />
     <meta name="author" content="Re:Sites" />
   </head>
-
   <body>
     <Navigation />
 
-    <h1>{pageTitle}</h1>
-    <p>
-      Een blog over dingen die mij bezighouden, meningen, kwaadsprekerij en
-      observaties.
-    </p>
-
-    <Footer />
     <style>
       h1 {
         color: purple;
         font-size: 4rem;
       }
     </style>
+    <h1>{pageTitle}</h1>
+    <p>
+      Een blog over dingen die mij bezighouden, meningen, kwaadsprekerij en
+      observaties.
+    </p>
+
+    <ul>
+      <li>
+        <a href="de-zaak-tegen-crypto">De Zaak Tegen Crypto</a>
+      </li>
+    </ul>
+    <Footer />
   </body>
 </html>

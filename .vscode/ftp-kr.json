@@ -1,0 +1,18 @@
+{
+    "host": "resites.nl",
+    "username": "qb104292",
+    "password": "oM9cZ3cE0dmL1a",
+    "remotePath": "/www/dingen.resites.nl/",
+    "protocol": "ftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": true,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode",
+        ".DS_Store"
+    ],
+    "localBasePath": "dist"
+}
