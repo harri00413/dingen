@@ -1,21 +1,193 @@
+/* Headings */
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-latin-300-normal.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-latin-700-italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-latin-900-normal.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Body text */
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/merriweather-latin-300-normal.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/merriweather-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/merriweather-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/merriweather-latin-400-normal.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/merriweather-latin-300-italic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/merriweather-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/merriweather-latin-700-italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/merriweather-latin-900-normal.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  scroll-behavior: smooth;
+  --color-pri-bg: #f1f5f9;
+
+  /* @link https://utopia.fyi/type/calculator?c=400,14,1.125,1280,20,1.2,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  /* Step -2: 11.0617px → 13.8889px */
+  --step--2: clamp(0.6914rem, 0.611rem + 0.3213vw, 0.8681rem);
+  /* Step -1: 12.4444px → 16.6667px */
+  --step--1: clamp(0.7778rem, 0.6578rem + 0.4798vw, 1.0417rem);
+  /* Step 0: 14px → 20px */
+  --step-0: clamp(0.875rem, 0.7045rem + 0.6818vw, 1.25rem);
+  /* Step 1: 15.75px → 24px */
+  --step-1: clamp(0.9844rem, 0.75rem + 0.9375vw, 1.5rem);
+  /* Step 2: 17.7188px → 28.8px */
+  --step-2: clamp(1.1074rem, 0.7926rem + 1.2592vw, 1.8rem);
+  /* Step 3: 19.9336px → 34.56px */
+  --step-3: clamp(1.2458rem, 0.8303rem + 1.6621vw, 2.16rem);
+  /* Step 4: 22.4253px → 41.472px */
+  --step-4: clamp(1.4016rem, 0.8605rem + 2.1644vw, 2.592rem);
+  /* Step 5: 25.2285px → 49.7664px */
+  --step-5: clamp(1.5768rem, 0.8797rem + 2.7884vw, 3.1104rem);
+}
+
 html {
-  background-color: #f1f5f9;
-  font-family: helvetica, sans-serif;
+  background-color: var(--color-pri-bg);
+  font-family: "Merriweather", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Raleway, sans-serif;
+}
+p,
+ul,
+li {
+  font-family: "Merriweather", serif;
+  /* font-size: clamp(0.9rem, 0.5vw + 0.7rem, 1.4rem); */
+  font-size: var(--step-0);
+
+  font-weight: 400;
 }
 
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
+  max-width: 96ch;
   padding: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: pretty;
+  margin-block-start: 2rem;
+  margin-block-end: 1rem;
+}
+
+p,
+ul {
   margin: 1rem 0;
-  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: var(--step-5);
+}
+h2 {
+  font-size: var(--step-4);
+}
+h3 {
+  font-size: var(--step-3);
+}
+h4 {
+  font-size: var(--step-2);
+}
+h5 {
+  font-size: var(--step-1);
+}
+h6 {
+  font-size: var(--step-0);
+}
+
+li {
+  list-style: disc outside;
+  padding-left: 1rem;
+  margin-left: 2ch;
+}
+
+a {
+  /* Grape */
+  color: #371c5d;
 }

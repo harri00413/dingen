@@ -1,40 +1,44 @@
 ---
-import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import ZwaluwImg from "../assets/2021-zwaluw-wide.webp";
 
 const pageTitle = "Re:Dingen";
 ---
 
-<html lang="nl-nl">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-    <meta
-      name="description"
-      content="Een blog over dingen die mij bezighouden, meningen, kwaadsprekerij en observaties."
+<BaseLayout pageTitle={pageTitle}>
+  <div class="entree">
+    <Image
+      src={ZwaluwImg}
+      alt="Zwaluw Loosdrechtse Plassen"
+      class="entree-image"
     />
-    <meta name="author" content="Re:Sites" />
-  </head>
+    <div class="entree-text">
+      <h4 class="m-0 text-indigo-900 font-bold text-right leading-10">
+        Over<br /> dingen die<br />ons bezighouden
+      </h4>
+    </div>
+  </div>
+  <h4>
+    Re:Dingen is het weblog van Frank Harland. Hier staan gedachten over-,
+    commentaren op dingen. Laat me maar weten wanneer het je leven totaal
+    veranderd heeft.
+  </h4>
+</BaseLayout>
 
-  <body>
-    <Navigation />
+<style>
+  .entree {
+    position: relative;
+    margin-block-start: 1rem;
+  }
 
-    <h1>{pageTitle}</h1>
-    <p>
-      Een blog over dingen die mij bezighouden, meningen, kwaadsprekerij en
-      observaties.
-    </p>
-
-    <Footer />
-    <style>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-    </style>
-  </body>
-</html>
+  .entree-text {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+  .entree-image {
+    width: 100%;
+    height: auto;
+  }
+</style>

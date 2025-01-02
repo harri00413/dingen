@@ -1,13 +1,16 @@
 ---
-title: 'De Zaak Tegen Crypto - door Stephen Diehl'
-pubDate: 2022-01-25
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'De Zaak Tegen Crypto'
+pubDate: 2022-01-22
 description: "Vertaling blogpost van Stephen Diehl."
-author: "Frank Harland"
-alt: "Big Bubble."
+teaser: "Dit is de tekst van een artikel van Stephen M. Diehl waarin duidelijk uiteengezet wordt waarom de opkomst van cryptovaluta een slechte ontwikkeling is. Ik zou het verhaal niet beter kunnen vertellen en herken en onderschrijf wat hij zegt. Met name de gevaarlijke trend dat techneuten, omdat de niet ICT geschoolden de ingewikkelde constructies niet begrijpen, hun gang kunnen gaan met het belazeren van iedereen die wat minder tech-minded is."
+author: "Stephen Diehl"
+image: 
+  url: "/images/bubble-800.jpg"
+  alt: "Big Bubble"
 tags: ["tech", "crypto", "it-crime"]
 ---
-![Bubble](img/bubble-800.jpg)
-### Met toestemming vertaald door Frank Harland met behulp van deepl.com.
+##### Met toestemming vertaald door Frank Harland met behulp van deepl.com.
 *Dit is de tekst van een artikel van Stephen M. Diehl waarin duidelijk uiteengezet wordt waarom de opkomst van cryptovaluta een slechte ontwikkeling is. Hij gebruikt daarbij referenties naar Amerikaanse historische gebeurtenissen. Ik zou het verhaal niet beter kunnen vertellen en herken en onderschrijf wat hij zegt. Met name de gevaarlijke trend dat techneuten, omdat de niet ICT geschoolden de ingewikkelde constructies niet begrijpen, hun gang kunnen gaan met het belazeren van iedereen die wat minder tech-minded is.* 
 
 *Het stuk van Stephen is een waardevolle bijdrage van een kenner die onrecht ziet gebeuren. Ook de politiek, doorgaans gespeend van iedere crypto-kennis zou hier notie van moeten nemen.*
@@ -15,7 +18,7 @@ tags: ["tech", "crypto", "it-crime"]
 Tegenwoordig is een groot deel van mijn vrije tijd gevuld met telefoontjes om aan mensen buiten de software-industrie uit te leggen waarom crypto-activa zo'n destructieve kracht zijn en waarom ik krachtige regulering steun om te voorkomen dat deze financieel corrosieve beweging zich verder over de markten verspreidt. Ik herhaal mezelf eindeloos over de basisargumenten, waarbij ik dezelfde fundamentele monetaire theorie, Amerikaanse geschiedenis en technische beperkingen behandel. Daarom zal ik het basisargument samenvatten, zodat we een referentie hebben en ik mezelf niet de hele dag hoef te blijven herhalen.
 
 #### 1. De technologie lost geen echt probleem op.
-Het crypto-project heeft 13 jaar de tijd gehad om een probleem te vinden wat het op kan lossen. Het heeft er geen gevonden.
+Het crypto-project heeft 13 jaar (in 2022) de tijd gehad om een probleem te vinden wat het op kan lossen. Het heeft er geen gevonden.
 
 De echte werkelijkheid heeft fundamentele beperkingen die de technologie onwerkbaar maken. Telkens wanneer het moet omgaan met de buitenwereld verdwijnen de voordelen van decentralisatie. De oplossingen eindigen uiteindelijk met het creëren van tragere en slechtere versies van processen en structuren die al bestaan. Denk hierbij aan bruikbaarheid als betaalmiddel. Die is met het lage gebruik van nu al vrij traag (10 minuten per transactie is normaal) en nauwelijks schaalbaar naar hoeveelheden transacties die we nu kennen van pin- en creditcard betalingen.
 

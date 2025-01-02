@@ -1,0 +1,265 @@
+{
+  "ftp://qb104292@resites.nl": {
+    "www": {
+      "dingen.resites.nl": {
+        "about": {
+          "index.html": {
+            "type": "-",
+            "size": 3958,
+            "lmtime": 1735564032804.1562,
+            "modified": false
+          }
+        },
+        "admin": {
+          "config_.yml": {
+            "type": "-",
+            "size": 866,
+            "lmtime": 1735564032578.5598,
+            "modified": false
+          }
+        },
+        "_astro": {
+          "BaseLayout.astro_astro_type_script_index_0_lang.C0INFTVv.js": {
+            "type": "-",
+            "size": 66,
+            "lmtime": 1735564032736.7239,
+            "modified": false
+          },
+          "index.astro_astro_type_script_index_0_lang.BZEtRn1_.js": {
+            "type": "-",
+            "size": 138,
+            "lmtime": 1735564032736.7395,
+            "modified": false
+          },
+          "index.B97RcjjV.css": {
+            "type": "-",
+            "size": 4738,
+            "lmtime": 1735564032705.6033,
+            "modified": false
+          },
+          "index.D7E91Po0.css": {
+            "type": "-",
+            "size": 5458,
+            "lmtime": 1735564032705.8748,
+            "modified": false
+          }
+        },
+        "blog": {
+          "data-fitness": {
+            "index.html": {
+              "type": "-",
+              "size": 5411,
+              "lmtime": 1735564032812.294,
+              "modified": false
+            }
+          },
+          "de-zaak-tegen-crypto": {
+            "index.html": {
+              "type": "-",
+              "size": 18406,
+              "lmtime": 1735564032817.9265,
+              "modified": false
+            }
+          },
+          "europese-privacy-wet-heeft-impact-op-data-management": {
+            "index.html": {
+              "type": "-",
+              "size": 9034,
+              "lmtime": 1735564032823.969,
+              "modified": false
+            }
+          },
+          "gdpr-en-datagovernance": {
+            "index.html": {
+              "type": "-",
+              "size": 5735,
+              "lmtime": 1735564032829.328,
+              "modified": false
+            }
+          },
+          "index.html": {
+            "type": "-",
+            "size": 6858,
+            "lmtime": 1735564032840.4585,
+            "modified": false
+          },
+          "vergeten-taak-van-it": {
+            "index.html": {
+              "type": "-",
+              "size": 7796,
+              "lmtime": 1735564032835.2234,
+              "modified": false
+            }
+          }
+        },
+        "favicon.svg": {
+          "type": "-",
+          "size": 749,
+          "lmtime": 1735564032579.1716,
+          "modified": false
+        },
+        "fonts": {
+          "merriweather-latin-300-italic.woff2": {
+            "type": "-",
+            "size": 19720,
+            "lmtime": 1735564032582.511,
+            "modified": false
+          },
+          "merriweather-latin-300-normal.woff2": {
+            "type": "-",
+            "size": 19752,
+            "lmtime": 1735564032583.3193,
+            "modified": false
+          },
+          "merriweather-latin-400-italic.woff2": {
+            "type": "-",
+            "size": 19780,
+            "lmtime": 1735564032583.722,
+            "modified": false
+          },
+          "merriweather-latin-400-normal.woff2": {
+            "type": "-",
+            "size": 20028,
+            "lmtime": 1735564032584.4824,
+            "modified": false
+          },
+          "merriweather-latin-700-italic.woff2": {
+            "type": "-",
+            "size": 19900,
+            "lmtime": 1735564032584.9414,
+            "modified": false
+          },
+          "merriweather-latin-700-normal.woff2": {
+            "type": "-",
+            "size": 19740,
+            "lmtime": 1735564032586.309,
+            "modified": false
+          },
+          "merriweather-latin-900-italic.woff2": {
+            "type": "-",
+            "size": 19844,
+            "lmtime": 1735564032587.7092,
+            "modified": false
+          },
+          "merriweather-latin-900-normal.woff2": {
+            "type": "-",
+            "size": 19816,
+            "lmtime": 1735564032588.8015,
+            "modified": false
+          },
+          "raleway-latin-200-italic.woff2": {
+            "type": "-",
+            "size": 22740,
+            "lmtime": 1735564032590.4846,
+            "modified": false
+          },
+          "raleway-latin-200-normal.woff2": {
+            "type": "-",
+            "size": 22276,
+            "lmtime": 1735564032591.376,
+            "modified": false
+          },
+          "raleway-latin-300-italic.woff2": {
+            "type": "-",
+            "size": 22784,
+            "lmtime": 1735564032592.2625,
+            "modified": false
+          },
+          "raleway-latin-300-normal.woff2": {
+            "type": "-",
+            "size": 22416,
+            "lmtime": 1735564032593.1772,
+            "modified": false
+          },
+          "raleway-latin-400-italic.woff2": {
+            "type": "-",
+            "size": 22800,
+            "lmtime": 1735564032594.3093,
+            "modified": false
+          },
+          "raleway-latin-400-normal.woff2": {
+            "type": "-",
+            "size": 22432,
+            "lmtime": 1735564032595.0198,
+            "modified": false
+          },
+          "raleway-latin-500-italic.woff2": {
+            "type": "-",
+            "size": 22236,
+            "lmtime": 1735564032595.6162,
+            "modified": false
+          },
+          "raleway-latin-500-normal.woff2": {
+            "type": "-",
+            "size": 22076,
+            "lmtime": 1735564032596.546,
+            "modified": false
+          },
+          "raleway-latin-700-normal.woff2": {
+            "type": "-",
+            "size": 22744,
+            "lmtime": 1735564032597.528,
+            "modified": false
+          },
+          "raleway-latin-900-normal.woff2": {
+            "type": "-",
+            "size": 21904,
+            "lmtime": 1735564032598.5107,
+            "modified": false
+          }
+        },
+        "images": {
+          "bubble-800.jpg": {
+            "type": "-",
+            "size": 45637,
+            "lmtime": 1735564032599.9236,
+            "modified": false
+          },
+          "fencing.jpg": {
+            "type": "-",
+            "size": 141796,
+            "lmtime": 1735564032601.8694,
+            "modified": false
+          },
+          "gdpr-800.jpg": {
+            "type": "-",
+            "size": 90258,
+            "lmtime": 1735564032602.9866,
+            "modified": false
+          },
+          "grandmother.jpg": {
+            "type": "-",
+            "size": 54680,
+            "lmtime": 1735564032603.9985,
+            "modified": false
+          },
+          "keyboard-800.jpg": {
+            "type": "-",
+            "size": 71012,
+            "lmtime": 1735564032604.864,
+            "modified": false
+          },
+          "logo-dingen.png": {
+            "type": "-",
+            "size": 45352,
+            "lmtime": 1735564032605.5295,
+            "modified": false
+          },
+          "re-dingen-bg.jpg": {
+            "type": "-",
+            "size": 512922,
+            "lmtime": 1735564032607.709,
+            "modified": false
+          }
+        },
+        "index.html": {
+          "type": "-",
+          "size": 2544,
+          "lmtime": 1735564032845.051,
+          "modified": false
+        }
+      }
+    }
+  },
+  "$version": 1
+}

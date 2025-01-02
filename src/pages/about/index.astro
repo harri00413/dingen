@@ -1,90 +1,51 @@
 ---
-import Footer from "../../components/Footer.astro";
-import Navigation from "../../components/Navigation.astro";
-import "../../styles/global.css";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import FrankSailingImage from "../../assets/frank-sailing.jpg";
 
 const pageTitle = "Over Re:Dingen";
 
 const identity = {
-  firstName: "Frank",
+  name: "Frank Harland",
   country: "Nederland",
   occupation: "DG Specialist",
   hobbies: ["build websites", "sailing", "music"],
 };
-
-const skills = ["HTML", "CSS", "Javascript", "Astro", "Hugo", "Wordpress"];
-
-const skillColor = "blue";
-const fontWeight = "bold";
-const textCase = "uppercase";
-
-const happy = true;
-const finished = false;
-const goal = 3;
 ---
 
-<html lang="nl-nls">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-    <meta
-      name="description"
-      content="Een blog over dingen die mij bezighouden, meningen, kwaadsprekerij en observaties."
-    />
-    <meta name="author" content="Re:Sites" />
-  </head>
+<BaseLayout pageTitle={pageTitle}>
+  <Image
+    src={FrankSailingImage}
+    alt="Frank Harland zeilend"
+    class="float-right w-1/2 mt-4"
+  />
+  <h4>
+    Re:Dingen is het weblog van Frank Harland. Hier staan gedachten, commentaren
+    over dingen. Soms zomaar letters achterelkaar. Laat me maar weten wanneer
+    het je leven totaal veranderd heeft.
+  </h4>
 
-  <body>
-    <Navigation />
+  <p>Bio: <br />Naam: {identity.name}</p>
 
-    <h1>{pageTitle}</h1>
+  <p>
+    Geslacht: Man <br />
+    Beroep: {identity.occupation}
+    <br />
+    Interesses: Zeilen, Data, Computer dingen, websites bouwen, Internet
+  </p>
+  <p>
+    Gedurende (het grootste deel van) de dag werk ik als data governance
+    specialist met een qualitic. 'Dingen' reflecteert op de dingen die ik
+    tegenkom op de gebieden van mijn interesses.
+  </p>
+</BaseLayout>
 
-    <style define:vars={{ skillColor, fontWeight, textCase }}>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-      .skill {
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--textCase);
-      }
-    </style>
-
-    <h4>
-      Re:Dingen is het weblog van Frank Harland. Hier staan gedachten,
-      commentaren over dingen. Soms zomaar letters achterelkaar. Laat me maar
-      weten wanneer het je leven totaal veranderd heeft.
-    </h4>
-    <p>My skills are:</p>
-    <ul>
-      {skills.map((skill) => <li class="skill">{skill}</li>)}
-    </ul>
-
-    {happy && <p>I am happy to be learning Astro!</p>}
-
-    {finished && <p>I finished this tutorial!</p>}
-
-    {
-      goal === 3 ? (
-        <p>My goal is to finish in 3 days.</p>
-      ) : (
-        <p>My goal is not 3 days.</p>
-      )
-    }
-
-    <p>Bio: <br />Naam: Frank Harland</p>
-    <p>
-      <p>Geslacht: Man</p>
-      Interesses: Zeilen, Data, Computer dingen, Website bouwen, Internet Gedurende
-      (het grootste deel van) de dag werk ik als zelfstandig data governance specialist
-      met een qualitic. 'Dingen' reflecteert op de dingen die ik tegenkom op de gebieden
-      van mijn interesses.
-    </p>
-
-    <Footer />
-  </body>
-</html>
+<style>
+  h1 {
+    color: purple;
+    font-size: 4rem;
+  }
+</style>
+<script>
+  import "../../scripts/menu.js";
+</script>

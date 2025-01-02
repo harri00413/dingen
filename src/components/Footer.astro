@@ -2,34 +2,61 @@
 import Social from "./Social.astro";
 ---
 
+<p class="mt-6">Dev & social:</p>
 <footer>
+  <br />
   <div class="footer-wrap">
     <div class="footeritem">
       <p>
-        Learn more about my projects on <Social
-          platform="github"
-          username="harri00413"
-        />
+        <Social platform="Github" url="github.com" username="harri00413" />
       </p>
     </div>
     <div class="footeritem">
       <p>
-        Volg me op <Social platform="X" username="harri00413" />
+        <Social platform="X/Twitter" url="x.com" username="harri00413" />
       </p>
     </div>
-  </div>
-  <style>
-    footer {
-      display: flex;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    @media only screen and (width > 800px) {
-      .footer-wrap {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-block: 2rem;
+    <div class="footeritem">
+      <p>
+        <Social
+          platform="Bluesky"
+          url="bsky.app"
+          username="@harri00413.bsky.social"
+        />
+      </p>
+    </div>
+    <div class="copyright">
+      <p class="text-small">
+        &copy; Re:Sites <span id="copyrightyear"></span>
+      </p>
+    </div>
+    <div class="created">
+      <p class="text-small">
+        site created with <a href="http://astro.build">Astro</a>
+      </p>
+    </div>
+
+    <style>
+      footer {
+        display: flex;
+        gap: 1rem;
       }
-    }
-  </style>
+      @media only screen and (width > 800px) {
+        .footer-wrap {
+          display: grid;
+          justify-items: center;
+          width: 100%;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          margin-block: 2rem;
+          gap: 3em;
+        }
+      }
+      .text-small {
+        font-size: var(--step--1);
+      }
+    </style>
+    <script>
+      import "../scripts/copyrightyear.js";
+    </script>
+  </div>
 </footer>

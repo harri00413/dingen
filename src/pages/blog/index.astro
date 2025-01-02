@@ -1,45 +1,56 @@
 ---
-import Navigation from "../../components/Navigation.astro";
-import Footer from "../../components/Footer.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const allPosts = Object.values(
+  import.meta.glob("./*.{md,mdx}", { eager: true })
+);
 
-import "../../styles/global.css";
-
-const pageTitle = "Re:Dingen Blog";
+const pageTitle = "Artikelen";
 ---
 
-<html lang="nl-nl">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-    <meta
-      name="description"
-      content="Een blog over dingen die mij bezighouden, meningen, kwaadsprekerij en observaties."
-    />
-    <meta name="author" content="Re:Sites" />
-  </head>
-  <body>
-    <Navigation />
+<BaseLayout pageTitle={pageTitle}>
+  <p>
+    Een blog over dingen die mij bezighouden, meningen, kwaadsprekerij en
+    observaties.
+  </p>
 
-    <style>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-    </style>
-    <h1>{pageTitle}</h1>
-    <p>
-      Een blog over dingen die mij bezighouden, meningen, kwaadsprekerij en
-      observaties.
-    </p>
-
-    <ul>
-      <li>
-        <a href="de-zaak-tegen-crypto">De Zaak Tegen Crypto</a>
-      </li>
-    </ul>
-    <Footer />
-  </body>
-</html>
+  <ul>
+    {
+      allPosts.map((post: any) => (
+        <li>
+          <div class="blogitem bg-indigo-100 p-1">
+            <a href={post.url}>
+              <h4>{post.frontmatter.title}</h4>
+            </a>
+            <h6 class="font-bold text-base">{post.frontmatter.description}</h6>
+            <p>{post.frontmatter.teaser}</p>
+          </div>
+          <div class="blogimage">
+            <a href={post.url}>
+              <img
+                src={post.frontmatter.image.url}
+                alt={post.frontmatter.image.alt}
+              />
+            </a>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
+<style>
+  li {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 2ch;
+  }
+  li p {
+    margin-block-start: 0;
+  }
+  .blogitem,
+  .blogimage {
+    margin: 0.8em 0;
+  }
+  .blogimage img {
+    object-fit: cover;
+  }
+</style>

@@ -1,9 +1,21 @@
 ---
 import Navigation from "./Navigation.astro";
+import Hamburger from "./Hamburger.astro";
 ---
 
 <header>
-  <nav>
+  <nav class="bg-violet-200 grid grid-cols-2 justify-end">
+    <div class="logo">
+      <img src="/images/logo-dingen.png" alt="Re:Dingen logo" />
+    </div>
+    <Hamburger />
     <Navigation />
   </nav>
 </header>
+<style>
+  .logo {
+    margin: 0.2em 0;
+    max-width: 200px;
+    height: auto;
+  }
+</style>

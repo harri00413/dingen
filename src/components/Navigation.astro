@@ -1,9 +1,59 @@
----
-
----
-
 <div class="nav-links">
   <a href="/">Home</a>
   <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
+  <a href="/blog/">Artikelen</a>
 </div>
+
+<style>
+  /* nav styles */
+
+  .nav-links {
+    width: 100%;
+    top: 5rem;
+    /* left: 48px; */
+    right: 20px;
+    background-color: #9476ff;
+    display: none;
+    margin: 0;
+  }
+
+  .nav-links a {
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Raleway, sans-serif;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: #c29bf6;
+  }
+
+  .expanded {
+    display: unset;
+    z-index: 100;
+    position: absolute;
+    right: 20px;
+  }
+
+  @media screen and (min-width: 636px) {
+    .nav-links {
+      margin-left: 5em;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: static;
+      width: auto;
+      background: none;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  }
+</style>
