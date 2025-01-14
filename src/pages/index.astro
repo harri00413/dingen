@@ -3,6 +3,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import ZwaluwImg from "../assets/2021-zwaluw-wide.webp";
 
+// Util functie om de blogposts te filteren op datum
+import { filterBlogPosts } from "../scripts/utils";
+
+const allPosts = Object.values(
+  import.meta.glob("./blog/*.{md,mdx}", { eager: true })
+);
+
+const filteredPosts = filterBlogPosts(allPosts, {
+  limit: 4,
+});
+
 const pageTitle = "Re:Dingen";
 ---
 
@@ -20,10 +31,42 @@ const pageTitle = "Re:Dingen";
     </div>
   </div>
   <h4>
-    Re:Dingen is het weblog van Frank Harland. Hier staan gedachten over-,
+    Re:Dingen is het weblog van Frank Harland. Hier staan gedachten over- en
     commentaren op dingen. Laat me maar weten wanneer het je leven totaal
     veranderd heeft.
   </h4>
+
+  <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 p-0 m-0">
+    {
+      filteredPosts.map((post: any) => (
+        <li class="grid grid-cols-1 bg-indigo-100 p-0 m-0">
+          <div class="blogitem p-1">
+            <a href={post.url}>
+              <h4 class="my-1">{post.frontmatter.title}</h4>
+            </a>
+            <h6 class="font-bold text-base my-2">
+              {post.frontmatter.description}
+            </h6>
+            <p class="text-base font-light">{post.frontmatter.teaser}</p>
+          </div>
+          <div class="blogimage self-end">
+            <a href={post.url}>
+              <img
+                src={post.frontmatter.image.url}
+                alt={post.frontmatter.image.alt}
+                class="aspect-square max-h-52 w-full"
+              />
+            </a>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+  <button
+    class="bg-violet-700 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded my-4"
+  >
+    <a class="text-white" href="/blog">Alle artikelen</a>
+  </button>
 </BaseLayout>
 
 <style>

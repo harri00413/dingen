@@ -39,6 +39,11 @@
           "isPublishDate": true
         },
         {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
           "title": "Content preview",
           "name": "heroImage",
           "type": "image",

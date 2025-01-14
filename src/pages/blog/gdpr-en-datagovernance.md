@@ -1,14 +1,18 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'AVG en Datagovernance'
+title: AVG en Datagovernance
 pubDate: 2021-04-11
-description: "Wat is de invloed van de AVG op datagovernance."
-teaser: "U kent ze vast wel, van die tellers die in een app of op een website, terugtellen naar een moment in de toekomst, nog zoveel dagen, uren, minuten, seconden te gaan tot de 'Gebeurtenis', wat dat dan ook is. Voor 25 mei 2018 kwam je op het Web ontelbare aftellers tegen, dat moment, 25 mei 2018 kennen we als de datum dat de AVG / GDPR handhaving gestart werdt."
-author: "Frank Harland"
-image: 
-  url: "/images/gdpr-800.jpg"
-  alt: "gdpr"
-tags: ["privacy", "data", "wetgeving"]
+description: Wat is de invloed van de AVG op datagovernance.
+teaser: U kent ze vast wel, van die tellers die in een app of op een website, terugtellen naar een moment in de toekomst, nog zoveel dagen, uren, minuten, seconden te gaan tot de 'Gebeurtenis', wat dat dan ook is.
+author: Frank Harland
+image:
+  url: /images/gdpr-800.jpg
+  alt: gdpr
+tags:
+  - privacy
+  - data
+  - wetgeving
+lastmod: 2025-01-14T14:21:08.306Z
 ---
 ##### U kent ze vast wel, van die tellers die in een app of op een website, terugtellen naar een moment in de toekomst, nog zoveel dagen, uren, minuten, seconden te gaan tot de "Gebeurtenis", wat dat dan ook is. 
 

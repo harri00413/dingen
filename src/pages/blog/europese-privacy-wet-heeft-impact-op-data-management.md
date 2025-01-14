@@ -1,14 +1,18 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Europese Privacy Wet Heeft Impact Op Data Management'
+title: Impact AVG op Datamanagement
 pubDate: 2022-08-05
-description: "Impact van EU Privacy wet (AVG) op datamanagement."
-teaser: "Officieel gaat het niet in de eerste plaats om terugdringing van de ongebreidelde spionagepraktijken van de Amerikaanse NSA en gelijken, maar dat is daar wel een direct gevolg van. Zo mag alleen nog een Europese rechter besluiten gegevens over Europeanen aan de VS over te dragen, burgers dienen direct toegang te krijgen tot hun gegevens en boetes voor overtreden zijn hoog."
-author: "Frank Harland"
-image: 
-  url: "/images/keyboard-800.jpg"
-  alt: "Keyboard"
-tags: ["privacy", "data", "wetgeving"]
+description: Impact van EU Privacy wet (AVG) op datamanagement.
+teaser: Alleen een Europese rechter mag nog besluiten gegevens over Europeanen aan de VS over te dragen, burgers dienen direct toegang te krijgen tot hun gegevens en boetes voor overtreden zijn hoog.
+author: Frank Harland
+image:
+  url: /images/keyboard-800.jpg
+  alt: Keyboard
+tags:
+  - privacy
+  - data
+  - wetgeving
+lastmod: 2025-01-02T14:59:42.381Z
 ---
 _Re-Blog van 22 oktober 2013_
 

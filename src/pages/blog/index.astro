@@ -1,8 +1,14 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+
+// Util functie om de blogposts te filteren op datum
+import { filterBlogPosts } from "../../scripts/utils";
+
 const allPosts = Object.values(
   import.meta.glob("./*.{md,mdx}", { eager: true })
 );
+
+const filteredPosts = filterBlogPosts(allPosts);
 
 const pageTitle = "Artikelen";
 ---
@@ -15,14 +21,14 @@ const pageTitle = "Artikelen";
 
   <ul>
     {
-      allPosts.map((post: any) => (
+      filteredPosts.map((post: any) => (
         <li>
           <div class="blogitem bg-indigo-100 p-1">
             <a href={post.url}>
-              <h4>{post.frontmatter.title}</h4>
+              <h4 class="my-1">{post.frontmatter.title}</h4>
             </a>
-            <h6 class="font-bold text-base">{post.frontmatter.description}</h6>
-            <p>{post.frontmatter.teaser}</p>
+            <h6 class="font-bold my-1">{post.frontmatter.description}</h6>
+            <p class="text-base">{post.frontmatter.teaser}</p>
           </div>
           <div class="blogimage">
             <a href={post.url}>
@@ -41,16 +47,11 @@ const pageTitle = "Artikelen";
   li {
     display: grid;
     grid-template-columns: 5fr 2fr;
-    gap: 2ch;
+    padding-left: 0;
+    margin-left: 0;
+    gap: 1rem;
   }
   li p {
     margin-block-start: 0;
-  }
-  .blogitem,
-  .blogimage {
-    margin: 0.8em 0;
-  }
-  .blogimage img {
-    object-fit: cover;
   }
 </style>

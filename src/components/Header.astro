@@ -3,10 +3,10 @@ import Navigation from "./Navigation.astro";
 import Hamburger from "./Hamburger.astro";
 ---
 
-<header>
-  <nav class="bg-violet-200 grid grid-cols-2 justify-end">
+<header class="sticky top-0 w-full z-50">
+  <nav class="bg-violet-200/80 grid grid-cols-2 justify-end">
     <div class="logo">
-      <img src="/images/logo-dingen.png" alt="Re:Dingen logo" />
+      <a href="/"><img src="/images/logo-dingen.png" alt="Re:Dingen logo" /></a>
     </div>
     <Hamburger />
     <Navigation />

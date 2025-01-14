@@ -1,14 +1,18 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'De Zaak Tegen Crypto'
+title: De Zaak Tegen Crypto
 pubDate: 2022-01-22
-description: "Vertaling blogpost van Stephen Diehl."
-teaser: "Dit is de tekst van een artikel van Stephen M. Diehl waarin duidelijk uiteengezet wordt waarom de opkomst van cryptovaluta een slechte ontwikkeling is. Ik zou het verhaal niet beter kunnen vertellen en herken en onderschrijf wat hij zegt. Met name de gevaarlijke trend dat techneuten, omdat de niet ICT geschoolden de ingewikkelde constructies niet begrijpen, hun gang kunnen gaan met het belazeren van iedereen die wat minder tech-minded is."
-author: "Stephen Diehl"
-image: 
-  url: "/images/bubble-800.jpg"
-  alt: "Big Bubble"
-tags: ["tech", "crypto", "it-crime"]
+description: Vertaling blogpost van Stephen Diehl. Waarom is Crypto slecht.
+teaser: Dit is de tekst van een artikel van Stephen M. Diehl waarin duidelijk uiteengezet wordt waarom de opkomst van cryptovaluta een slechte ontwikkeling is. Crypto-techneuten kunnen hun gang gaan met het belazeren van iedereen die wat minder tech-minded is.
+author: Stephen Diehl
+image:
+  url: /images/bubble-800.jpg
+  alt: Big Bubble
+tags:
+  - tech
+  - crypto
+  - it-crime
+lastmod: 2025-01-02T14:57:49.087Z
 ---
 ##### Met toestemming vertaald door Frank Harland met behulp van deepl.com.
 *Dit is de tekst van een artikel van Stephen M. Diehl waarin duidelijk uiteengezet wordt waarom de opkomst van cryptovaluta een slechte ontwikkeling is. Hij gebruikt daarbij referenties naar Amerikaanse historische gebeurtenissen. Ik zou het verhaal niet beter kunnen vertellen en herken en onderschrijf wat hij zegt. Met name de gevaarlijke trend dat techneuten, omdat de niet ICT geschoolden de ingewikkelde constructies niet begrijpen, hun gang kunnen gaan met het belazeren van iedereen die wat minder tech-minded is.* 

@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+
 const { frontmatter } = Astro.props;
+
 const pubDateFmt = new Date(frontmatter.pubDate).toLocaleDateString("nl-NL", {
   day: "2-digit",
   month: "2-digit",
