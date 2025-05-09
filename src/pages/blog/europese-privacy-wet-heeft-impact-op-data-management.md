@@ -8,11 +8,12 @@ author: Frank Harland
 image:
   url: /images/keyboard-800.jpg
   alt: Keyboard
+  heroImage: ../../../public/images/keyboard-800.jpg
 tags:
   - privacy
   - data
   - wetgeving
-lastmod: 2025-01-02T14:59:42.381Z
+lastmod: 2025-01-23T14:31:28.236Z
 ---
 _Re-Blog van 22 oktober 2013_
 

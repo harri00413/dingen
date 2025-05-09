@@ -2,8 +2,6 @@ export function filterPostsByDate(posts) {
   const now = new Date();
   return posts.filter(post => {
     const postDate = new Date(post.frontmatter.pubDate);
-    // console.log('now :>> ', now);
-    // console.log('postDate :>> ', postDate);
     return postDate <= now;
   });
 }
@@ -25,14 +23,14 @@ export function filterBlogPosts(posts, {
     if (filterOutFuturePosts && new Date(date) > new Date()) return acc;
 
     // add post to acc
-    acc.push(post)
+    acc.push(post);
 
     return acc;
   }, [])
 
   // sortByDate or randomize
   if (sortByDate) {
-    filteredPosts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
+    filteredPosts.sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter.pubDate))
   } else {
     filteredPosts.sort(() => Math.random() - 0.5)
   }
@@ -41,6 +39,7 @@ export function filterBlogPosts(posts, {
   if (typeof limit === "number") {
     return filteredPosts.slice(0, limit);
   }
+  
   return filteredPosts;
 
 }

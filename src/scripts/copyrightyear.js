@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => copyrightYear());
 // year website went on-line
 const startYear = 2008;
 
-function copyrightYear() {
+export function copyrightYear() {
   const copyrightYearElem = document.getElementById("copyrightyear");
 
   const curYear = new Date().getFullYear();

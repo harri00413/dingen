@@ -5,15 +5,15 @@ pubDate: 2022-07-14
 description: Voorstel om datakwaliteit voortaan data fitness te noemen.
 teaser: In onze eeuwigdurende schermpartij om datakwaliteit te verbeteren en daarbij met argumenten mensen te overtuigen van goede zorg voor data, is de riposte vaak vaag en vermoedelijk onjuist.
 author: Frank Harland
-draft: false
 image:
   url: /images/fencing.jpg
   alt: Fencing
+  heroImage: ../../assets/fencing.jpg
 tags:
   - tech
   - data
   - fit
-lastmod: 2025-01-14T14:16:41.625Z
+lastmod: 2025-01-23T14:30:43.946Z
 ---
 #### In onze eeuwigdurende schermpartij om datakwaliteit te verbeteren en daarbij met argumenten mensen te overtuigen van goede zorg voor data, is de **riposte** vaak vaag en vermoedelijk onjuist. 
 

@@ -3,7 +3,7 @@
   "frontMatter.framework.id": "astro",
   "frontMatter.preview.host": "http://localhost:4321",
   "frontMatter.content.publicFolder": {
-    "path": "src/assets",
+    "path": "[[workspace]]/src/assets",
     "relative": true
   },
   "frontMatter.content.pageFolders": [
@@ -44,15 +44,10 @@
           "type": "draft"
         },
         {
-          "title": "Content preview",
-          "name": "heroImage",
-          "type": "image",
-          "isPreviewImage": true
-        },
-        {
           "title": "layout",
           "name": "layout",
-          "type": "string"
+          "type": "string",
+          "default": "/src/layouts/MarkdownPostLayout.astro"
         },
         {
           "title": "teaser",
@@ -69,6 +64,12 @@
           "name": "image",
           "type": "fields",
           "fields": [
+            {
+              "title": "Content preview",
+              "name": "heroImage",
+              "type": "image",
+              "isPreviewImage": true
+            },
             {
               "title": "url",
               "name": "url",

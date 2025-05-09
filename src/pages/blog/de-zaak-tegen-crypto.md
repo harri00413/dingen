@@ -8,11 +8,12 @@ author: Stephen Diehl
 image:
   url: /images/bubble-800.jpg
   alt: Big Bubble
+  heroImage: ../../../public/images/bubble-800.jpg
 tags:
   - tech
   - crypto
   - it-crime
-lastmod: 2025-01-02T14:57:49.087Z
+lastmod: 2025-01-23T14:30:59.609Z
 ---
 ##### Met toestemming vertaald door Frank Harland met behulp van deepl.com.
 *Dit is de tekst van een artikel van Stephen M. Diehl waarin duidelijk uiteengezet wordt waarom de opkomst van cryptovaluta een slechte ontwikkeling is. Hij gebruikt daarbij referenties naar Amerikaanse historische gebeurtenissen. Ik zou het verhaal niet beter kunnen vertellen en herken en onderschrijf wat hij zegt. Met name de gevaarlijke trend dat techneuten, omdat de niet ICT geschoolden de ingewikkelde constructies niet begrijpen, hun gang kunnen gaan met het belazeren van iedereen die wat minder tech-minded is.* 

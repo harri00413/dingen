@@ -23,11 +23,11 @@ const pageTitle = "Artikelen";
     {
       filteredPosts.map((post: any) => (
         <li>
-          <div class="blogitem bg-indigo-100 p-1">
+          <div class="p-1 bg-indigo-100 blogitem">
             <a href={post.url}>
               <h4 class="my-1">{post.frontmatter.title}</h4>
             </a>
-            <h6 class="font-bold my-1">{post.frontmatter.description}</h6>
+            <h6 class="my-1 font-bold">{post.frontmatter.description}</h6>
             <p class="text-base">{post.frontmatter.teaser}</p>
           </div>
           <div class="blogimage">

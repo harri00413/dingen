@@ -25,7 +25,7 @@ const pageTitle = "Re:Dingen";
       class="entree-image"
     />
     <div class="entree-text">
-      <h4 class="m-0 text-indigo-900 font-bold text-right leading-10">
+      <h4 class="m-0 font-bold leading-10 text-right text-indigo-900">
         Over<br /> dingen die<br />ons bezighouden
       </h4>
     </div>
@@ -36,25 +36,25 @@ const pageTitle = "Re:Dingen";
     veranderd heeft.
   </h4>
 
-  <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 p-0 m-0">
+  <ul class="grid grid-cols-1 gap-4 p-0 m-0 md:grid-cols-2">
     {
       filteredPosts.map((post: any) => (
-        <li class="grid grid-cols-1 bg-indigo-100 p-0 m-0">
-          <div class="blogitem p-1">
+        <li class="grid grid-cols-1 p-0 m-0 bg-indigo-100">
+          <div class="p-1 blogitem">
             <a href={post.url}>
               <h4 class="my-1">{post.frontmatter.title}</h4>
             </a>
-            <h6 class="font-bold text-base my-2">
+            <h6 class="my-2 text-base font-bold">
               {post.frontmatter.description}
             </h6>
             <p class="text-base font-light">{post.frontmatter.teaser}</p>
           </div>
-          <div class="blogimage self-end">
+          <div class="self-end blogimage">
             <a href={post.url}>
               <img
                 src={post.frontmatter.image.url}
                 alt={post.frontmatter.image.alt}
-                class="aspect-square max-h-52 w-full"
+                class="w-full aspect-square max-h-52"
               />
             </a>
           </div>
@@ -63,9 +63,9 @@ const pageTitle = "Re:Dingen";
     }
   </ul>
   <button
-    class="bg-violet-700 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded my-4"
+    class="px-4 py-2 my-4 font-bold text-white rounded bg-violet-900 hover:bg-indigo-700"
   >
-    <a class="text-white" href="/blog">Alle artikelen</a>
+    <a href="/blog">Alle artikelen</a>
   </button>
 </BaseLayout>
 

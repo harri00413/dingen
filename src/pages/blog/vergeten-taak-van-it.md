@@ -8,11 +8,12 @@ author: Frank Harland
 image:
   url: /images/grandmother.jpg
   alt: Grootmoeder
+  heroImage: ../../assets/grandmother.jpg
 tags:
   - documentatie
   - IT
   - Kenniskloof
-lastmod: 2025-01-01T19:18:51.147Z
+lastmod: 2025-01-23T14:31:46.043Z
 ---
 ##### Er wordt in de media wel eens geklaagd over onbekendheid en onkunde van mensen, vaak politici en managers, bij het gebruik van IT producten.
 

@@ -8,11 +8,12 @@ author: Frank Harland
 image:
   url: /images/gdpr-800.jpg
   alt: gdpr
+  heroImage: ../../assets/gdpr-800.jpg
 tags:
   - privacy
   - data
   - wetgeving
-lastmod: 2025-01-14T14:21:08.306Z
+lastmod: 2025-01-23T14:37:56.997Z
 ---
 ##### U kent ze vast wel, van die tellers die in een app of op een website, terugtellen naar een moment in de toekomst, nog zoveel dagen, uren, minuten, seconden te gaan tot de "Gebeurtenis", wat dat dan ook is. 
 
@@ -37,4 +38,4 @@ Natuurlijk, iets is beter dan niets. Maar de bedoeling is juist dat de hele orga
 Dat betekent niet dat deze moeten verdwijnen, misschien wel maar dat moet per geval beoordeeld worden aan de hand van een risico-analyse. Het gaat er om dat we weten wat er is, zodat we de risico's in kaart kunnen brengen. 
 
 ### Besturing
-Datagovernance is de professie die er voor kan zorgen dat er besturing komt op het omgaan met data. Die activiteit die zorgt dat in de hele organisatie bewustzijn wordt ontwikkeld van het feit dat werken met data en informatie betekent dat je er zo zorgvuldig mogelijk mee om moet gaan omdat het een volwaardig bedrijfsmiddel is. Vaak het belangrijkste bedrijfsmiddel wat de organisatie bezit.
+Datagovernance is de professie die er voor kan zorgen dat er **besturing** komt op het **omgaan met data**. Die activiteit die zorgt dat in de hele organisatie bewustzijn wordt ontwikkeld van het feit dat werken met data en informatie betekent dat je er zo zorgvuldig mogelijk mee om moet gaan omdat het een volwaardig bedrijfsmiddel is. Vaak het belangrijkste bedrijfsmiddel wat de organisatie bezit.
